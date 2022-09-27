@@ -5,7 +5,7 @@ package Lab1;
 // Date 			: 27-9-2022
 // Purpose 			: My first class implementation
 
-public class ThermTest
+public class Lab1q1
 { // begin class ThermTest
 	public static void main(String args[]) 
 	{ // being main method
