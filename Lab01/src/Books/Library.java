@@ -1,33 +1,55 @@
 package Books;
 
+import java.util.Scanner;
+
 import Books.Book;
 
 
 public class Library {
 
 	public static void main(String[] args) {
+		Book[] books = new Book[3];
 		
-		Book bookOne = new Book("HTML for Dummies", "John Bloggs", "Educational", 'A', 2 );
-		Book bookTwo = new Book("The Host", "Mary Bourke", "Drama", 'A', 3 );
-		Book bookThree = new Book("My Long Summer", "Martin Keane", "Comedy", 'A', 4 );
+		Scanner in = new Scanner(System.in);
 		
-		System.out.print(bookOne + "\n");
-		System.out.print(bookOne.getNoOfBooks()+ "\n");
+		for(int i = 0; i<3; i++) {
+
+			System.out.println("Please enter the name for Book: " + (i+1));
+
+			String name = in.nextLine();
+
+			System.out.println("Please enter the Author of Book: " + (i+1));
+
+			String author = in.nextLine();
+
+			System.out.println("Please enter the genre of Book: " + (i+1));
+
+			String genre = in.nextLine();
+
+			Book b = new Book(name,author,genre, 'A' );
+
+			System.out.println( Book.getNoOfBooks());
+			
+			
+			
+			books[i] =b;
+			
+			if (i ==1 || i == 2) {
+				b.Borrow();
+			}
+			if (i == 2) {
+				b.Return();
+			}
+			
+			
+				}
 		
-		System.out.print(bookTwo + "\n");
-		System.out.print(bookTwo.getNoOfBooks()+ "\n");
+				for (Book b: books) {
+						if (b!=null) {
+								System.out.println(b);
 		
-		System.out.print(bookThree + "\n");
-		System.out.print(bookThree.getNoOfBooks()+ "\n");
-		
-		
-		bookTwo.Borrow();
-		
-		System.out.print(bookTwo + "\n");
-		
-		bookTwo.Return();
-		
-		System.out.print(bookTwo + "\n");
 	}
 
+}
+}
 }

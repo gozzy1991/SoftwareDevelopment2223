@@ -11,20 +11,20 @@ private char bookStatus;
 private int numOfBooks;
 private String bookNum;
 
-private int ISBN = 1;
+private static int ISBN = 1;
 private static int ISBNCount = 0;
 
 private boolean borrowed;
 
 	
 	
-	public Book(String bookName, String bookAuthor, String bookGenre, char bookStatus, int numOfBooks) {
+	public Book(String bookName, String bookAuthor, String bookGenre, char bookStatus) {
 		
 		setBookName(bookName);
 		setBookAuthor(bookAuthor);
 		setBookGenre(bookGenre);
 		setBookStatus(bookStatus);
-		setNumOfBooks(numOfBooks);
+		
 		ISBNCount++;
 		ISBN = ISBNCount;
 		
@@ -78,7 +78,7 @@ private boolean borrowed;
 		return ISBN;
 	}
 	
-	public String getNoOfBooks() {
+	public static String getNoOfBooks() {
 		
 		return "There is "+ ISBN + " book object/s total.";
 	}
@@ -87,7 +87,7 @@ private boolean borrowed;
 	public String toString()
 	{
 	    return  "\nAuthor: " + bookAuthor + "\nTitle: " + bookName + 
-	  "\nGenre: " +bookGenre + "\nBook Status: "+ bookStatus+ "\nNumber Of Copies " + numOfBooks +"\nISBN: " + ISBN;
+	  "\nGenre: " +bookGenre + "\nBook Status: "+ bookStatus +"\nISBN: " + ISBN;
 	}
 	
 	public boolean isBorrowed() {
