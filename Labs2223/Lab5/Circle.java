@@ -1,3 +1,7 @@
+// Author : Brendan Phelan
+// Date : 2/11/2022
+// Purpose : A test driver program for our Point/Circle inheritance
+
 package Lab5;
 public class Circle extends Point 
 {  
