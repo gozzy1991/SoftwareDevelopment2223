@@ -4,8 +4,8 @@ import Lab02.HotelRoom;
 
 // Student Name 	: Brendan Phelan
 // Student Id Number: 
-// Date 			: 28-9-2022
-// Purpose 			: Class implementations
+// Date 			: 12-10-2022
+
 
 public class Lab02q1
 { 
