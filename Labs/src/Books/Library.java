@@ -1,4 +1,4 @@
-package Books;
+ package Books;
 
 import java.util.Scanner;
 
@@ -32,21 +32,7 @@ public class Library {
 			
 			
 			
-			books[i] =b;
 			
-			if (i ==1 || i == 2) {
-				b.Borrow();
-			}
-			if (i == 2) {
-				b.Return();
-			}
-			
-			
-				}
-		
-				for (Book b: books) {
-						if (b!=null) {
-								System.out.println(b);
 		
 	}
 
