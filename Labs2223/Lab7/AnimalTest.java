@@ -1,9 +1,13 @@
+// Co-Author : Brendan Phelan
+// Date : 22/11/2022
+
 package Lab7;
 
 public class AnimalTest
 {
 	public static void main (String args[])
 	{
+		
 		Animal dog = new Dog("Poodle", 4, "Male");
 		System.out.println(dog);
 		dog.eat();
@@ -18,7 +22,10 @@ public class AnimalTest
 		cat.sleep();
 		cat.makeSound();
 
-		
+		Vet theVet = new Vet("Jason Barron"); 
 
+		theVet.vaccinate(dog);
+		
+		theVet.vaccinate(cat);
 		}
 }

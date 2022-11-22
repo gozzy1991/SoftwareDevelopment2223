@@ -1,3 +1,6 @@
+// Author : Brendan Phelan
+// Date : 22/11/2022
+
 package Lab7;
 
 public class Cat extends Animal {

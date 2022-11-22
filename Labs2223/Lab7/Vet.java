@@ -1,6 +1,9 @@
+// Author : Brendan Phelan
+// Date : 22/11/2022
+
 package Lab7;
 
-public class Vet extends Animal {
+public class Vet {
 	
 	private String name;
 	
@@ -8,8 +11,19 @@ public class Vet extends Animal {
 	      this.name = name;
 	   }
 	
-	 public void vaccinate(Animal) {
-	      System.out.println(name + " is vaccinating");
-	   } 
-	
-}
+	 public void vaccinate(Animal animal) {
+	      System.out.println("\n" + name + " is vaccinating");
+	      
+	      
+	      
+	      if (animal instanceof Dog) {
+	    	  
+	    	  System.out.println("Dog has been vaccinated:  " + animal.toString() );
+	      }
+	      
+	      if (animal instanceof Cat) {
+	    	  
+	    	  System.out.println("Cat has been vaccinated:  " + animal.toString());
+	      }
+}   
+	 }
