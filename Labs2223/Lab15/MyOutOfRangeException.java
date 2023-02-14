@@ -5,6 +5,6 @@ package Lab15;
 
 public class MyOutOfRangeException extends Exception{
     public MyOutOfRangeException() {
-        super("Value is out of range.");
+        super("Value is out of range!!");
     }
 }
